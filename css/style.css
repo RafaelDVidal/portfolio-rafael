@@ -1,0 +1,309 @@
+/* 1- Configuração para tudo */
+* {
+    padding: 0;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: rgb(235, 235, 235);
+}
+/* 1- Fim*/
+
+/* 2- Estilização e comportamento do cabeçalho com a navegação - Começo*/
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(15, 65, 85);
+}
+.titulo-header {
+    padding: 10px;
+    font-size: 23px;
+    color: rgb(236, 236, 236);
+}
+.nav-bar {
+    padding: 20px;
+    font-size: 18px;
+}
+.nav-bar a {
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 2px;
+}
+.nav-bar select {
+    padding: 3px;
+}
+.nav-bar a:link, .nav-bar a:visited {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-bar a:hover {
+    background-color: white;
+    color: rgb(15, 65, 85);
+    text-decoration: none;
+    font-weight: bold;
+}
+/* 2- Fim*/
+
+/* 3- Estilização e comportamento de todos os sections - Começo*/
+section {
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    margin-left: clamp(10px, 10%, 200px);
+    margin-right: clamp(10px, 10%, 200px);
+    padding-left: clamp(10px, 10%, 200px);
+    padding-right: clamp(10px, 10%, 200px);
+    padding-top: clamp(10px, 10%, 50px);
+    box-shadow: 
+        -5px 5px 12px rgb(131, 131, 131),
+        5px 5px 12px rgb(131, 131, 131);
+    color: rgb(75, 75, 75);
+}
+section div {
+    padding-bottom: 20px;
+}
+/* 3- Fim*/
+
+/* 4- Estilização e comportamento do rodapé - Começo*/
+footer {
+    background-color: rgb(15, 65, 85);
+    align-items: center;
+    display: flex;
+}
+
+.principal-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.principal-footer p, a {
+    margin: 0px 30px 0px 0px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.principal-footer a:link, .principal-footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.linkedin-footer a:hover {
+    background-color: white;
+    color: rgb(15, 65, 85);
+    text-decoration: none;
+}
+
+.whatsapp-footer a:hover {
+    background-color: white;
+    color: rgb(23, 105, 57);
+    text-decoration: none;
+}
+/* 4- Fim*/
+
+/* 5- Estilização de elementos da section da página de sobre mim - Começo */
+.sobre-mim h1 {
+    font-size: 40px;
+    color: rgb(17, 73, 95);
+}
+.sobre-mim h1, h2 {
+    padding: 10px;
+}
+.interesses-lista {
+    align-items: center;
+}
+.interesses-lista h1 {
+    font-size: 90px;
+}
+.computacao {
+    text-align: center;
+}
+.geografia {
+    text-align: center;
+}
+.exploracao {
+    text-align: center;
+}
+.filosofia {
+    text-align: center;
+}
+.engenharia {
+    text-align: center;
+}
+.interesses-lista div {
+    display: inline-block;
+}
+.extras img {
+    box-shadow: 5px 0 15px rgb(73, 73, 73);
+}
+@media(max-width: 600px) {
+    .extras img {
+        width: 290px;
+    }
+}
+/* 5- Fim */
+
+/* 6- Estilização de elementos da section da página de formação - Começo */
+.formacao h1, h2 {
+    padding: 10px;
+}
+.titulo-formacao h1 {
+    font-size: 40px;
+    color: rgb(17, 73, 95);
+}
+.ensino-superior h1 {
+    font-size: 35px;
+    color: rgb(17, 73, 95);
+}
+.formacao img {
+    margin: 10px;
+}
+.ads-uninter img {
+    height: 190px;
+    float: left;
+}
+.ensino-tecnico {
+    margin-top: 15px;
+}
+.ensino-tecnico h1 {
+    font-size: 35px;
+    color: rgb(17, 73, 95);
+    text-align: left;
+}
+.tds-senai img {
+    float: left;
+    width: 180px;
+}
+.titulo-linguas {
+    margin-bottom: 0;
+}
+.titulo-linguas h1 {
+    font-size: 35px;
+    color: rgb(17, 73, 95);
+}
+.linguas img {
+    width: 150px;
+    height: 80px;
+    box-shadow: 5px 0 10px rgb(73, 73, 73);
+}
+.portugues {
+    margin-bottom: 50px;
+}
+.ingles {
+    margin-bottom: 50px;
+}
+.espanhol {
+    margin-bottom: 50px;
+}
+.portugues img {
+    margin: 10px;
+    float: left;
+}
+.ingles img {
+    margin: 10px;
+    float: left;
+}
+.espanhol img {
+    margin: 10px;
+    float: left;
+}
+/* 6- Fim */
+
+/* 7- Estilização de elementos da section da página de portfolio - Começo */
+.titulo-portfolio h1 {
+    font-size: 40px;
+    color: rgb(17, 73, 95);
+}
+.desenvolvedor-dotnet h1 {
+    font-size: 35px;
+    color: rgb(17, 73, 95);
+}
+.tecnico-ensino h1 {
+    font-size: 35px;
+    color: rgb(17, 73, 95);
+}
+.titulo-projetos h1 {
+    font-size: 35px;
+    color: rgb(17, 73, 95);
+}
+.medtec img {
+    width: 700px;
+    box-shadow: 5px 0 10px rgb(73, 73, 73);
+}
+@media(max-width: 1000px) {
+    .medtec img {
+        width:500px;
+    }
+}
+@media(max-width: 710px) {
+    .medtec img {
+        width:300px;
+    }
+}
+.link-github a {
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.link-github a:link, .link-github a:visited {
+    text-decoration: none;
+    color: rgb(17, 73, 95);
+}
+.link-github a:hover {
+    text-decoration: none;
+    background-color: rgb(17, 73, 95);
+    color: white;
+}
+/* 7- Fim */
+
+/* 8- Estilização de elementos da section da página de contato - Começo */
+.contato {
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 5px 5px 10px rgb(73, 73, 73);
+    border: solid 2px rgb(133, 133, 133);
+}
+.contato-titulo {
+    display: flex;
+}
+.contato-titulo h1 {
+    font-size: 40px;
+    color: rgb(17, 73, 95);
+}
+.formulario-contato form {
+    display: flex;
+    flex-direction: column;
+}
+.formulario-contato input {
+    font-size: 15px;
+    width: 400px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.formulario-contato textarea {
+    font-size: 15px;
+    width: 400px;
+    height: 150px;
+}
+@media(max-width: 720px) {
+    .formulario-contato input {
+        width: 200px;
+    }
+    .formulario-contato textarea {
+        width: 200px;
+    }
+}
+.formulario-contato button {
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 5px 25px;
+}
+.formulario-contato button:hover {
+    cursor: pointer;
+}
+/* 8- Fim */
