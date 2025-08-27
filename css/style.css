@@ -163,10 +163,6 @@ footer {
 .formacao img {
     margin: 10px;
 }
-.ads-uninter img {
-    height: 190px;
-    float: left;
-}
 .ensino-tecnico {
     margin-top: 15px;
 }
@@ -306,4 +302,5 @@ footer {
 .formulario-contato button:hover {
     cursor: pointer;
 }
+
 /* 8- Fim */
